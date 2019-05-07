@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+   .mr-bakg{
+      width:575px;
+	  height:300px;
+	  border:3px #f00 solid;
+	  margin:0 25%;
+	  background:url(images/01.jpg);
+	  }
+
+	  .mr-picbom{
+	     width:110px;
+		 height:190px;
+		 position:relative;
+		 margin:50px 242px;
+		
+		 }
+		 .mr-picleft,.mr-picright{
+		    position:absolute;
+			top:0px;
+			
+			}
+			.mr-picbom:hover .mr-picleft{
+			   transform:translate(190px);
+			   transition:transform 2s ease;
+			   }
+			   .mr-picbom:hover .mr-picright{
+			   transform:translate(-190px);
+			   transition:transform 2s ease;
+			   }
+</style>
+</head>
+<body>
+<div class="mr-bakg">
+   <div class="mr-picbom">
+   <div class="mr-pic">
+      <img src="images/phine1.png"/>
+   </div>
+
+   <div class="mr-picleft">
+      <img src="images/phine2.png"/>
+   </div>
+
+   <div class="mr-picright">
+      <img src="images/phone3.png"/>
+   </div>
+   </div>
+</div>
+</body>
+</html>
+
