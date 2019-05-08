@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+  .mr-content{
+	width: 713px;
+    height: 500px;
+	margin: 0 auto;
+    background: url(images/10-6.jpg) no-repeat;
+    position: relative;		
+	}
+   .mr-news{
+	width: 200px;
+	height: 200px;
+    overflow: hidden;
+    position: absolute;
+    top: 130px;
+    left: 472px;
+	}
+ 
+    .mr-p{
+	height: 50px;			/*设置宽度*/
+	margin-top: 0;			/*设置外边距*/
+    color: #333;			/*设置字体颜色*/
+    font-size: 24px;		/*设置字体大小*/
+    animation: lun 10s linear infinite;		/*设置动画*/
+	
+	}
+	@-webkit-keyframes lun {		/*通过百分比指定过度各个状态时间*/
+	0%{margin-top:0;}
+	10%{margin-top:-30px;}
+	20%{margin-top:-60px;}
+	30%{margin-top:-90;}
+	40%{margin-top:-120px;}
+	50%{margin-top:-150px;}
+	60%{margin-top:-180;}
+	70%{margin-top:-210px;}
+	80%{margin-top:-240px;}
+	90%{margin-top:-270px;}
+	100%{margin-top:-310px;}
+	}
+</style>
+</head>
+<body>
+<div class="mr-content">
+   <div   class="mr-news">
+      <div class="mr-p">
+      <p>华为年度盛典</p>
+	  <p>惊喜连连</p>
+	  <p>新品手机震撼上市</p>
+	  <p>折扣多多</p>
+	  <p>不容错过</p>
+	   </div>
+   </div>
+</div>
+</body>
+</html>
