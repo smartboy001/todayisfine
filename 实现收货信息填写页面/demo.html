@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+<style>
+   @charset "utf-8";
+/* CSS Document */
+/*页面整体布局*/
+.mr-cont{
+	height: 474px;
+	width: 685px;
+	margin: 20px auto;
+	border: 1px solid #f00;
+	background: url(img/bg.png);
+}
+.mr-cont div{
+	width: 400px;
+	text-align: center;
+	margin: 30px 0 0 140px;
+}
+.red{
+	font-size: 12px;
+	color: #f00;
+}
+.addr input{
+margin: auto 20px;
+}
+[type="radio"]{
+	margin: 0 30px;
+}
+p{
+	text-align: left;
+	margin-left: 45px;
+}
+/*文本域的大小*/
+textarea{
+	height: 80px;
+	width: 390px;
+}
+#btn{
+	margin-top: 10px;
+}
+/*设置"提交"、"保存"、"充填"按钮的大小*/
+#btn input{
+	width: 80px;
+	height: 30px;
+}
+
+
+
+</style>
+</head>
+<body>
+<div class="mr-cont">
+   <h2>收货信息填写</h2>
+    <form>
+	   <div>姓名:
+	      <input type="text"><span class="red">****必须填</span>
+	   </div>
+	   <div>电话:
+	      <input type="text"><span class="red">****必填项</span>
+	   </div>
+	   <div>是否允许代收:
+	      <label>是<input type="radio" name="receive" checked></label>
+		  <label><input type="radio" name="receive">否</label>
+	   </div>
+	   <div class="addr">地址:
+	      <input type="text" placeholder="--省" size="5">
+          <input type="text" placeholder="--市" size="5">
+	   </div>
+	   <div>
+	      <p>具体地址:<span class="red">****必填项</p>
+		  <textarea></textarea>
+	   </div>
+	   <div id="btn">
+	      <input type="submit" value="提交">
+		  <input type="button" value="保存" onclick="alert(保存信息成功)">
+		  <input type="reset" value="重填">
+	   </div>
+	</form>
+</div>
+</body>
+</html>
