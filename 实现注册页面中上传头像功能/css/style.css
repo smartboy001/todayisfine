@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+.mr-cont{
+	width: 800px;
+	height: 600px;
+	margin: 20px auto;
+	text-align: center;
+	border: 1px solid #f00;
+	background: url(../img/bg.png);
+}
+/*通过内边距调整标题位置*/
+h2{
+	padding: 40px 0 0 0;
+}
+/*表单整体样式*/
+form{
+	width: 554px ;
+	height: 462px;
+	margin: 0 0 0 150px;
+	background: url(../img/4-9.png);
+}
+.clear{
+	height: 100px;
+}
+/*文件域样式*/
+[type="file"]{
+	display: block;
+	padding: 0 0 0 175px;
+}
+/*图像域样式*/
+[type="image"]{
+	margin: 304px 0 0 100px;
+}
